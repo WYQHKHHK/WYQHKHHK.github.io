@@ -164,3 +164,9 @@ hexo d
 
 ![](/img/hexo/1205/Artboard_1.png)
 
+
+
+## 参考链接
+
+- [迁移hexo到新电脑](https://www.jianshu.com/p/153490a029a5)
+- [GitHub + Hexo搭建自己博客(三) 多设备管理](https://juejin.cn/post/6844903780664737806)
