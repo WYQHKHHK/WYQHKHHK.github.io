@@ -127,8 +127,9 @@ cover:
   # left/right/both
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
-  default_cover: 
-    - https://i.loli.net/2021/12/01/H1EtRus7rDwX5PU.jpg
+  default_cover: /img/sunshine.jpg
+    # - https://i.loli.net/2021/12/01/H1EtRus7rDwX5PU.jpg
+    # - /img/sunshine.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
