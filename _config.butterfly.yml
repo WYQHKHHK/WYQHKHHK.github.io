@@ -9,11 +9,12 @@
 menu:
   Home: / || fas fa-home
   Archives: /archives/ || fas fa-archive
-  Tags: /tags/ || fas fa-tags
-  Categories: /categories/ || fas fa-folder-open
-  # List||fas fa-list:
-    # Music: /music/ || fas fa-music
-    # Movie: /movies/ || fas fa-video
+  # Tags: /tags/ || fas fa-tags
+  # Categories: /categories/ || fas fa-folder-open
+  List||fas fa-list:
+    Music: /music/ || fas fa-music
+    Movie: /movies/ || fas fa-video
+    Gallery: /Gallery/ || far fa-images
   # Link: /link/ || fas fa-link
   About: /about/ || fas fa-heart
 
@@ -57,7 +58,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
 
 # Math (數學)
 # --------------------------------------
@@ -85,7 +86,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /img/weihaiboot.jpg
+  img: /img/abaaba.jpg
   effect: false
 
 # Disable all banner image
