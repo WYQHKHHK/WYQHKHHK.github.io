@@ -71,6 +71,15 @@ default_category: uncategorized
 category_map:
 tag_map:
 
+# 搜索
+
+# search:
+#   path: search.xml
+#   field: post
+#   content: true
+#   template: ./search.xml
+
+
 # # type: RSS的类型(atom/rss2)
 # # path: 文件路径,默认是atom.xml/rss2.xml
 # # limit: 展示文章的数量,使用0或则false代表展示全部
