@@ -10,7 +10,7 @@ keywords:
 description:
 top_img:
 comments:
-cover:
+cover: 'https://s2.loli.net/2021/12/20/3zPmqioHYNrEWbV.jpg'
 ---
 
 ## 浅谈医疗器械GMP
