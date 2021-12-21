@@ -6,7 +6,7 @@
   <link href="http://wyqhkhhk.github.io/atom.xml" rel="self"/>
   
   <link href="http://wyqhkhhk.github.io/"/>
-  <updated>2021-12-20T09:35:16.209Z</updated>
+  <updated>2021-12-21T03:04:33.088Z</updated>
   <id>http://wyqhkhhk.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FEMA</title>
+    <link href="http://wyqhkhhk.github.io/2021/12/20/FEMA/"/>
+    <id>http://wyqhkhhk.github.io/2021/12/20/FEMA/</id>
+    <published>2021-12-20T09:48:02.000Z</published>
+    <updated>2021-12-21T03:04:33.088Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="潜在失效模式与后果分析-Failure-Mode-and-Effect-Analysis"><a href="#潜在失效模式与后果分析-Failure-Mode-and-Effect-Analysis" class="headerlink" title="潜在失效模式与后果分析(Failure Mode and Effect  Analysis)"></a>潜在失效模式与后果分析(Failure Mode and Effect  Analysis)</h2><h3 id="什么是FEMA？"><a href="#什么是FEMA？" class="headerlink" title="什么是FEMA？"></a>什么是FEMA？</h3><p>FMEA 是先期质量策划中评价潜在失效模式及其起因的一种工具。</p><ul><li>依照其发生在失效的风险优先排列并采取行动排除或降低其发生的。</li><li>为未来使用和持续改进提供文件化的预防经验/方法。</li></ul><h3 id="FEMA分类"><a href="#FEMA分类" class="headerlink" title="FEMA分类"></a>FEMA分类</h3><ul><li><strong>DFMEA</strong>  Design FMEA 设计失效模式及后果分析</li><li><strong>PFMEA</strong>  Process FMEA 过程失效模式及后果分析</li><li><strong>SFMEA</strong>  System FMEA (子)系统失效模式及后果分析</li><li><strong>MFMEA</strong>  Machine FMEA 机器失效模式及后果分析</li><li><strong>AFMEA</strong>  Application FMEA 应用失效模式及后果分析</li><li><strong>PFMEA</strong>  Purchasing FMEA 采购失效模式及后果分析，这个，需要和上面的PFMEA区分好，这里的P是指Purchasing，具体和应用场合有关。</li><li><strong>SFMEA</strong>  Service FMEA 服务失效模式及后果分析</li><li><strong>RFMEA</strong>  Rework FMEA 返工失效模式及后果分析</li></ul><h3 id="FEMA时间顺序"><a href="#FEMA时间顺序" class="headerlink" title="FEMA时间顺序"></a>FEMA时间顺序</h3><p>DFMEA   开始早于过程，完成时间在早期的图样完成但任何工具的制造开始之前</p><p>PFMEA   开始于基本的操作方法讨论完成时，完成时间早于生产计划制定和生产批准之前</p><h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><p><img src="https://s2.loli.net/2021/12/21/jHcWFib1lLwn85T.png" alt="DFEMA流程图"></p><h4 id="严重度（Severity）"><a href="#严重度（Severity）" class="headerlink" title="严重度（Severity）"></a>严重度（<strong>Severity</strong>）</h4><p>衡量失效的影响程度</p><p>失效影响：产品或制程的某一失效对产品外观、结构、功能、性能稳定性、可靠性影响，或对下一制程，使用者和设备的影响</p><p>划分标准：—<strong>主观判定</strong></p><p>其大小由失效模式的影响程度而定，以1至10表示，等级1为轻微，等级10为最严重</p><table><thead><tr><th>等级/评分(Rank)</th><th>划分标准(Criteria)</th></tr></thead><tbody><tr><td>1</td><td>几乎不会有什么影响</td></tr><tr><td>2</td><td>整机内部配件的外观/走线/布局问题；装配性差；很少客户发现/关注的问题</td></tr><tr><td>3</td><td>产品非主要应用的功能之性能稍有瑕疵，如音质、色调等，非专业人士无法识别；EMC Ⅱ级要求（EMC组定义，较高要求）；产品与常规使用/操作的习惯不同</td></tr><tr><td>4</td><td>在高于产品承诺的环境中使用失效，但此环境低于公司内部控制标准或者已达到行业（协会）标准要求；EMCⅠ级要求（EMC组定义，基本要求）；不符合标准化之定义</td></tr><tr><td>5</td><td>存在的问题使产品长期运行的可靠性降低，如散热、纹波；产品维修复杂，甚至需要培训才能完成当前技术无法解决的功能性问题</td></tr><tr><td>6</td><td>产品维护复杂，装配、生产非常困难；设计的产品我司制造工艺无法完成；客户独特配件的兼容性问题；不能95％以上机率复现的问题；计算机监测功能失效或者误差大，如FP指示，BIOS中温度监控显示性能与同类产品相比明显下降；</td></tr><tr><td>7</td><td>外部配件失效，但不影响计算机数据处理功能，如键盘、鼠标失效，显示功能失效，有警告的冗余电源失效；客户关注的重点功能或者产品主推场合应用方面的兼容性问题、量化参数不达标，如网络产品带宽、丢包率</td></tr><tr><td>8</td><td>基本功能失效，失效影响计算机数据处理功能</td></tr><tr><td>9</td><td>影响产品安全运行或者包含不符合法律、法规、产品执行标准；影响人身安全，产品失效时有警告</td></tr><tr><td>10</td><td>影响产品安全运行或者包含不符合法律、法规、产品执行标准，影响人身安全，产品失效时无警告</td></tr></tbody></table><h4 id="发生率（Occurrence）"><a href="#发生率（Occurrence）" class="headerlink" title="发生率（Occurrence）"></a>发生率（<strong>Occurrence</strong>）</h4><p>某一原因而导致失效发生的几率</p><p>划分标准：一部良品出现的几率来定，以1至10表示，等级1为很低，等级10 为很高</p><p>划分标准—<strong><a href="https://www.sohu.com/a/157910551_702317">CPK</a>、主观判定、统计资料</strong></p><p><img src="https://s2.loli.net/2021/12/21/gmXOkn4JE9UN1dI.png" alt="发生率"></p><h4 id="难检度（Detection）"><a href="#难检度（Detection）" class="headerlink" title="难检度（Detection）"></a>难检度（<strong>Detection</strong>）</h4><p>在现行的控制措施下，侦测失效发生的能力</p><p>划分标准：依失效模式检验的难易程度来定，以1至10表示，等级1为容易，等级10为几乎不可能发现 </p><p>划分标准—<strong>主观判</strong>定、统计资料</p><p><img src="https://s2.loli.net/2021/12/21/uUFacd16IfmVjR8.png" alt="难检度"></p><h4 id="风险系数（Risk-Priority-Number）"><a href="#风险系数（Risk-Priority-Number）" class="headerlink" title="风险系数（Risk Priority Number）"></a>风险系数（<strong>Risk Priority Number</strong>）</h4><p>$$<br>RPN=S<em>O</em>D<br>$$</p><ol><li>风险系数RPN排出次序后，RPN越大越优先解决。  RPN在100以上者必须解决；50&lt;RPN&lt;100应尽可能解决，不能解决必须加严控制；RPN&lt;50可不加控制。</li><li>当严重度(S)很高或发生率（O）很高时，不管RPN大小如何，必须制定相应改善或控制措施 ，并指定责任人和改善完成日期。</li></ol><h3 id="FMEA表单说明"><a href="#FMEA表单说明" class="headerlink" title="FMEA表单说明"></a>FMEA表单说明</h3><p><img src="https://s2.loli.net/2021/12/21/HufCwMdZIh2eEgq.png" alt="FEMA表单"></p><ol><li>FMEA编号：填入FMEA文件的编号，以便查询; </li><li>项目：填入所分析的系统、子系统或零件的过程名称、编号; </li><li>设计责任：部门、小组还应包括供方的名称; </li><li>填入负责准备FMEA工作的工程师姓名、电话及所在公司名称; </li><li>机型/料号：填入将使用和正被分析的设计过程影响的预期的机型和料号;</li><li>关键日期：填入FMEA初次预定完成日期、该日期不应超过计划开始设计生产发布日期;</li><li>FMEA日期：填入编制FMEA原始稿的日期及最新修订的日期；</li><li>核心小组：列出有权确定和执行任务的责任部门和个人姓名; 如果对某一特定原因无建议措施,那么就在该栏中写“N/A” ；</li><li>项目/功能：填入被分析项目的名称和编号; 若该项目有多种功能,且有不同的失效模式,应把所有功能都单独列出;</li><li>潜在失效模式: 对一个特定项目及其功能,应用规范化、专业性的术语来列出每一个潜在失效模式。前提是这种失效可能发生,但不一定发生。比如：裂纹、变形、松动、短路（电器）、氧化、断裂等无功能、部分功能、功能过强、功能降级、功能间歇、非预期功能。</li><li>潜在失效后果:  潜在失效后果,就是失效模式对系统功能的影响;一般是客户在使用时看到的状况。比如：噪声、工作不正常、外观不良、粗糙、不稳定、间歇性工作、不起作用、异味等。 </li><li>严重度(S) </li><li>分级(重要程度) ：用于对另件、子系统或系统的产品特性分级:关键、主要、重要、轻微等;</li><li>潜在失效的起因/机理：潜在失效起因是指一个设计/工艺薄弱部分的迹象,起因是什么导致失效</li><li>频度(0):频度是指某一特定失效起因或机理(已列于前栏中)出现的可能性. </li><li>现行设计/工艺控制。 控制方法指的是那些已经用于或正在用于相同或相似设计中的那些方法（比如设计评审、计算研究、可行性评审、样机试验和老化试验等）。</li><li>探测度(D) </li><li>风险顺序数RPN </li><li>建议措施:（详见后面RPN的评估）<br>比如设计更改、过程更改、特殊控制、采用新程序或指南的更改。如果对某一特定原因无建议措施,那么就在该栏中写“无”。</li><li>责任(对建议措施) ：   把负责建议措施执行的组织和个人及预计完成的日期填写在本栏中; </li><li>采取的措施：   跟踪、评审、确认和控制计划等，记录一下具体的措施和生效日期</li><li>纠正后RPN </li><li>跟踪：小组成员应保证所有建议措施被实施或已妥善  地落实; 24.RPN的再改进,一般行业要求RPN=&lt;50.</li></ol>]]></content>
+    
+    
+    <summary type="html">Failure Mode and Effect  Analysis</summary>
+    
+    
+    
+    <category term="质量管理" scheme="http://wyqhkhhk.github.io/categories/%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="FEMA" scheme="http://wyqhkhhk.github.io/categories/%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86/FEMA/"/>
+    
+    
+    <category term="PFEMA" scheme="http://wyqhkhhk.github.io/tags/PFEMA/"/>
+    
+    <category term="DFEMA" scheme="http://wyqhkhhk.github.io/tags/DFEMA/"/>
+    
+  </entry>
   
   <entry>
     <title>浅谈医疗器械GMP</title>
