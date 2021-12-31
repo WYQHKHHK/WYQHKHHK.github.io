@@ -6,7 +6,7 @@
   <link href="http://wyqhkhhk.github.io/atom.xml" rel="self"/>
   
   <link href="http://wyqhkhhk.github.io/"/>
-  <updated>2021-12-22T06:31:55.498Z</updated>
+  <updated>2021-12-27T01:31:16.679Z</updated>
   <id>http://wyqhkhhk.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ISO13485标准解读</title>
+    <link href="http://wyqhkhhk.github.io/2021/12/22/ISO13485%E6%A0%87%E5%87%86%E8%A7%A3%E8%AF%BB/"/>
+    <id>http://wyqhkhhk.github.io/2021/12/22/ISO13485%E6%A0%87%E5%87%86%E8%A7%A3%E8%AF%BB/</id>
+    <published>2021-12-22T09:28:47.000Z</published>
+    <updated>2021-12-27T01:31:16.679Z</updated>
+    
+    <content type="html"><![CDATA[<p>​        ISO 13485：2003 标准是以ISO 9001：2000《质量管理体系要求》标准为基础，采用了ISO 9000：2000 标准的质量管理理念，引用了ISO 9001：2000标准的结构、条款和格式，包含了ISO 9001：2000 标准的大部分质量管理体系的通用要求，以能确保医疗器械生产企业建立保持的质量管理体系具有持续稳定生产符合规定要求产品的能力。</p><h2 id="ISO13485-2003-标准概述"><a href="#ISO13485-2003-标准概述" class="headerlink" title="ISO13485: 2003 标准概述"></a>ISO13485: 2003 标准概述</h2><h3 id="ISO13485-2003-标准基本思想和特点"><a href="#ISO13485-2003-标准基本思想和特点" class="headerlink" title="ISO13485: 2003 标准基本思想和特点"></a>ISO13485: 2003 标准基本思想和特点</h3><h3 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h3><ol><li><p>以ISO9001：2000标准为基础，提出质量管理体系是由相互关联的“管理职责”、“资源管理”、“产<br>品实现”、“测量分析改进”四大过程组成</p></li><li><p>满足顾客要求；<strong>满足法规的要求</strong>。标准总计共有<strong>28 处</strong>提到法规要求，因此，满足医疗器械行政法规和技术<br>法规要求是医疗器械市场准入的基本条件。因此强调保持质量管理体系有效性是必要的。只有这样才能确保医疗器械的安全有效。医疗器械改进是需要的也是必要的，但要在符合法规的范围内进行，强调日常的频繁的持续改进，将可能背离法规，造成医疗器械不安全、无效的后果。因此强调“持续改进”对医疗器械是不适宜的。标准还指出：“顾客满意对于医疗器械法规的目标是不适当的，而且对组织生产安全和有效的医疗器械能力具有不利的影响”。“顾客满意”和“顾客感知度”作为法规要求来实施都过于主观</p><p>医疗器械的生产是满足法规要求，而不应因顾客的满意和不满意去改变医疗器械。而按顾客满意与否随意地改变医疗器械是既背离法规也对生产安全有效的医疗器械产生不利影响。</p></li><li><p>促进全世界医疗器械法规协调为目标修订ISO 13485 标准。</p></li></ol><h3 id="主要特点"><a href="#主要特点" class="headerlink" title="主要特点"></a>主要特点</h3><ol><li>标准是仅适用于医疗器械行业的专业性强的独立标准</li><li>突出满足医疗器械法规的要求<ol><li>ISO 13485：2003 标准和ISO 9001：2000 标准存在不少差别。因此质量管理体系符合ISO 13485：2003 的组织不能声称符合ISO9001：2000 标准，除非其质量管理体系还符合附加的ISO 9001：2000 标准要求</li></ol></li><li>标准继续明确文件化要求<ol><li>标准继续强调文件化要求，标准中<strong>26 处</strong>提出形成程序文件的要求，有<strong>40 处</strong>提出记录要求</li></ol></li><li>标准强调医疗器械专用要求</li><li>标准重视风险管理要求<ol><li>标准指出“组织在产品实现过程中，建立风险管理的形成文件的要求。应保持风险管理引发的记录。”风<br>险管理与医疗器械组织的质量管理体系有关的活动和要求中的一个关键要求</li></ol></li></ol><h3 id="ISO-13485和-ISO-9000族标准的关系"><a href="#ISO-13485和-ISO-9000族标准的关系" class="headerlink" title="ISO 13485和 ISO 9000族标准的关系"></a>ISO 13485和 ISO 9000族标准的关系</h3><p>ISO 9000族标准的是个核心标准：</p><ul><li>ISO 9000: 2000 《质量管理体系   基础和术语》</li><li>ISO 9001: 2000  <strong>《质量管理体系  要求》</strong></li><li>ISO 9004: 2000 《质量管理体系  业绩改进指南》</li><li>ISO 19011:2002 《质量或（或）环境管理体系审核指南》</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;​        ISO 13485：2003 标准是以ISO 9001：2000《质量管理体系要求》标准为基础，采用了ISO 9000：2000 标准的质量管理理念，引用了ISO 9001：2000标准的结构、条款和格式，包含了ISO 9001：2000 标准的大部分质量</summary>
+      
+    
+    
+    
+    <category term="质量管理" scheme="http://wyqhkhhk.github.io/categories/%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="ISO13485" scheme="http://wyqhkhhk.github.io/categories/%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86/ISO13485/"/>
+    
+    
+    <category term="ISO13485" scheme="http://wyqhkhhk.github.io/tags/ISO13485/"/>
+    
+    <category term="体系" scheme="http://wyqhkhhk.github.io/tags/%E4%BD%93%E7%B3%BB/"/>
+    
+    <category term="标准" scheme="http://wyqhkhhk.github.io/tags/%E6%A0%87%E5%87%86/"/>
+    
+    <category term="ISO9001" scheme="http://wyqhkhhk.github.io/tags/ISO9001/"/>
+    
+  </entry>
   
   <entry>
     <title>APQP</title>
