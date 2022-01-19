@@ -1,7 +1,7 @@
 ---
 title: pip安装失败
 date: 2022-01-19 17:19:54
-tags:['pip','python']
+tags: ['pip','python']
 updated:
 categories:
   - 'Python'
