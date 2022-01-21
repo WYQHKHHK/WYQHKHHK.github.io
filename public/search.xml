@@ -4,6 +4,151 @@
   
     
     <entry>
+      <title>pip安装失败</title>
+      <link href="/2022/01/19/pip%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5/"/>
+      <url>/2022/01/19/pip%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5/</url>
+      
+        <content type="html"><![CDATA[<h2 id="pip安装报错解决"><a href="#pip安装报错解决" class="headerlink" title="pip安装报错解决"></a>pip安装报错解决</h2><ul><li><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Could not fetch URL https://pypi.tuna.tsinghua.edu.cn/simple/pip/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host=<span class="string">&#x27;pypi.tuna.tsinghua.edu.cn&#x27;</span>, port=443): Max retries exceeded with url: /simple/pip/ (Caused by SSLError(SSLEOFError(8, <span class="string">&#x27;EOF occurred in violation of protocol (_ssl.c:997)&#x27;</span>))) - skipping</span><br></pre></td></tr></table></figure></li><li><p>解决方案：更换安装源</p><p>windows下<br> 直接在user目录中创建一个pip目录，如：<code>C:\Users\xx\pip</code>，新建文件<code>pip.ini</code>，内容如下：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line"></span><br><span class="line">[install]</span><br><span class="line"></span><br><span class="line">trusted-host=https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></li></ul><ul><li><p>解决方案：增加信任服务器</p><p>增加<code>--trusted-host pypi.douban.com</code></p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install  xxx  --index-url http://pypi.douban.com/simple/    --trusted-host pypi.douban.com</span><br></pre></td></tr></table></figure><ul><li><p>注解</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1. pip install 表示通过pip 来安装某种包</span><br><span class="line"></span><br><span class="line">2. xxx     表示你要安装的包名，比如pipenv，jupyter等等</span><br><span class="line"></span><br><span class="line">3. -i http://pypi.douban.com/simple       表示将镜像地址切换为国内，这里切换到了豆瓣</span><br><span class="line"></span><br><span class="line">4.--trusted-host pypi.douban.com    表示将指定网站设置为信任服务器</span><br></pre></td></tr></table></figure></li><li><p>国内镜像地址：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1)http://mirrors.aliyun.com/pypi/simple/    阿里云</span><br><span class="line"></span><br><span class="line">2)https://pypi.mirrors.ustc.edu.cn/simple/ 中国科技大学</span><br><span class="line"></span><br><span class="line">3) http://pypi.douban.com/simple/    豆瓣</span><br><span class="line"></span><br><span class="line">4) https://pypi.tuna.tsinghua.edu.cn/simple/   清华大学</span><br><span class="line"></span><br><span class="line">5)  http://pypi.mirrors.ustc.edu.cn/simple/ 中国科学技术大学</span><br></pre></td></tr></table></figure></li></ul></li></ul><h3 id="tip-pip安装总是失败怎么办"><a href="#tip-pip安装总是失败怎么办" class="headerlink" title="tip: pip安装总是失败怎么办?"></a>tip: pip安装总是失败怎么办?</h3><ol><li><p><strong>安装包安装</strong></p><p>从官网下载相应的安装包，解压后放在指定文件夹：</p><p>打开命令行，切换到含有<code>setup.py</code>的文件夹</p><p>然后输入<code>python setup.py install</code></p></li><li><p><strong>WHL文件安装</strong></p><p>首先，要从<a href="https://pypi.org/">官网</a>上下载指定的 <strong>.whl</strong> 文件，选择最近版本点击，在<code>Downloadfiles</code>版块可以看到文件</p><p>下载好后，切换到指定文件夹，输入<strong>“pip install 文件名”</strong>即可，如：</p></li></ol><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+          <category> pip安装 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> pip </tag>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ISO13485标准解读</title>
+      <link href="/2021/12/22/ISO13485%E6%A0%87%E5%87%86%E8%A7%A3%E8%AF%BB/"/>
+      <url>/2021/12/22/ISO13485%E6%A0%87%E5%87%86%E8%A7%A3%E8%AF%BB/</url>
+      
+        <content type="html"><![CDATA[<p>​        ISO 13485：2003 标准是以ISO 9001：2000《质量管理体系要求》标准为基础，采用了ISO 9000：2000 标准的质量管理理念，引用了ISO 9001：2000标准的结构、条款和格式，包含了ISO 9001：2000 标准的大部分质量管理体系的通用要求，以能确保医疗器械生产企业建立保持的质量管理体系具有持续稳定生产符合规定要求产品的能力。</p><h2 id="ISO13485-2003-标准概述"><a href="#ISO13485-2003-标准概述" class="headerlink" title="ISO13485: 2003 标准概述"></a>ISO13485: 2003 标准概述</h2><h3 id="ISO13485-2003-标准基本思想和特点"><a href="#ISO13485-2003-标准基本思想和特点" class="headerlink" title="ISO13485: 2003 标准基本思想和特点"></a>ISO13485: 2003 标准基本思想和特点</h3><h3 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h3><ol><li><p>以ISO9001：2000标准为基础，提出质量管理体系是由相互关联的“管理职责”、“资源管理”、“产<br>品实现”、“测量分析改进”四大过程组成</p></li><li><p>满足顾客要求；<strong>满足法规的要求</strong>。标准总计共有<strong>28 处</strong>提到法规要求，因此，满足医疗器械行政法规和技术<br>法规要求是医疗器械市场准入的基本条件。因此强调保持质量管理体系有效性是必要的。只有这样才能确保医疗器械的安全有效。医疗器械<strong>改进</strong>是需要的也是必要的，但要在符合法规的范围内进行，强调日常的频繁的持续改进，将可能背离法规，造成医疗器械不安全、无效的后果。因此强调“持续改进”对医疗器械是不适宜的。标准还指出：“顾客满意对于医疗器械法规的目标是不适当的，而且对组织生产安全和有效的医疗器械能力具有不利的影响”。“顾客满意”和“顾客感知度”作为法规要求来实施都过于主观</p><p>医疗器械的生产是满足法规要求，而不应因顾客的满意和不满意去改变医疗器械。而按顾客满意与否随意地改变医疗器械是既背离法规也对生产安全有效的医疗器械产生不利影响。</p></li><li><p>促进全世界医疗器械法规协调为目标修订ISO 13485 标准。</p></li></ol><h3 id="主要特点"><a href="#主要特点" class="headerlink" title="主要特点"></a>主要特点</h3><ol><li>标准是仅适用于医疗器械行业的专业性强的独立标准</li><li>突出满足医疗器械法规的要求<ul><li>ISO 13485：2003 标准和ISO 9001：2000 标准存在不少差别。因此质量管理体系符合ISO 13485：2003 的组织不能声称符合ISO9001：2000 标准，除非其质量管理体系还符合附加的ISO 9001：2000 标准要求</li></ul></li><li>标准继续明确文件化要求<ul><li>标准继续强调文件化要求，标准中<strong>26 处</strong>提出形成程序文件的要求，有<strong>40 处</strong>提出记录要求</li></ul></li><li>标准强调医疗器械专用要求</li><li>标准重视风险管理要求<ul><li>标准指出“组织在产品实现过程中，建立风险管理的形成文件的要求。应保持风险管理引发的记录。”风<br> 险管理与医疗器械组织的质量管理体系有关的活动和要求中的一个关键要求</li></ul></li></ol><h3 id="ISO-13485和-ISO-9000族标准的关系"><a href="#ISO-13485和-ISO-9000族标准的关系" class="headerlink" title="ISO 13485和 ISO 9000族标准的关系"></a>ISO 13485和 ISO 9000族标准的关系</h3><p>ISO 9000族标准的是个核心标准：</p><ul><li><p>ISO 9000: 2000 《质量管理体系   基础和术语》</p></li><li><p>ISO 9001: 2000  <strong>《质量管理体系  要求》</strong></p></li><li><p>ISO 9004: 2000 《质量管理体系  业绩改进指南》</p></li><li><p>ISO 19011:2002 《质量或（或）环境管理体系审核指南》</p><p>以及支持性标准报告小册子</p></li></ul><h2 id="GB-T-19000族标准简介"><a href="#GB-T-19000族标准简介" class="headerlink" title="GB/T 19000族标准简介"></a>GB/T 19000族标准简介</h2><h3 id="质量管理体系基础"><a href="#质量管理体系基础" class="headerlink" title="质量管理体系基础"></a>质量管理体系基础</h3><h4 id="八项质量管理原则"><a href="#八项质量管理原则" class="headerlink" title="八项质量管理原则"></a>八项质量管理原则</h4><ol><li><p>以顾客为关注焦点<br>组织依存于顾客。因此，组织应当理解顾客当前和未来的需求，满<br>足顾客要求并争取超越顾客期望</p></li><li><p>领导作用<br>领导者确定组织统一的宗旨及方向，他们应当创造并保持使员工能<br>充分参与实现组织目标的内部</p></li><li><p>全员参与<br>各级人员都是组织之本，只有他们的充分参与，才能使他们的才干<br>为组织带来效益。</p></li><li><p>过程方法<br>将活动和相关资源作为过程进行管理，可以更高效地得到期望的结果。</p></li><li><p>管理的系统方法<br>将相互关联的过程作为系统加以识别，理解和管理，有助于组织提<br>高实现目标的有效性和效率。</p><table><thead><tr><th>过程方法</th><th>管理的系统方法</th></tr></thead><tbody><tr><td>关注过程中的活动</td><td>关注系统中的过程</td></tr><tr><td>将系统分解</td><td>将系统综合</td></tr><tr><td>属于战术，局部</td><td>属于战略全局</td></tr><tr><td>追求有效性</td><td>追求有效性和效率</td></tr><tr><td>n 是由哪几个别组成的</td><td>n 个1 相加大于n</td></tr></tbody></table></li><li><p>持续改进<br>持续改进总体业绩应当是组织的一个永恒目标。</p><ul><li>值得注意的是在 ISO 13485 标准中删去了“持续改进”和“增强顾客满意”<br>两个词语，代之以“改进”和“持续满足顾客要求”。这是出于医疗器械的基本<br>要求是安全和有效。同时要符合法规要求，产品改进要分阶段进行，并按法规<br>手续审批，持续不断地改进和让病人满意对医疗器械来说是不现实的。</li></ul></li><li><p>基于事实的决策方法<br>有效决策是建立在数据和信息分析的基础上。</p></li><li><p>与供方互利的关系<br>组织与供方是相互依存的，互利的关系可增强双方创造价值的能力。</p></li></ol><h4 id="ISO-9000：2000主要内容"><a href="#ISO-9000：2000主要内容" class="headerlink" title="ISO 9000：2000主要内容"></a>ISO 9000：2000主要内容</h4><ul><li>一部分是质量管理体系的术语</li><li>另一部分是质量管理体系基础<ul><li>质量管理体系的理论说明</li><li>质量管理体系的要求和产品要求</li><li>质量管理体系方法<ul><li>PDCA</li></ul></li><li>过程方法<ul><li><img src="https://s2.loli.net/2021/12/31/sTcJkS19RPYfuwg.jpg" alt="以过程为基础的质量管理体系模式"></li></ul></li><li>质量方针和质量目标</li><li>最高管理者在质量管理体系中的作用</li><li>文件</li><li>质量管理体系评价</li><li>持续改进</li><li>统计技术的作用</li><li>质量管理体系与其它管理体系的关注点</li><li>质量管理体系与优秀模式之间的关系</li></ul></li></ul><h4 id="质量管理原则、质量管理体系基础与GB-T-19000-族标准的关系"><a href="#质量管理原则、质量管理体系基础与GB-T-19000-族标准的关系" class="headerlink" title="质量管理原则、质量管理体系基础与GB/T 19000 族标准的关系"></a>质量管理原则、质量管理体系基础与GB/T 19000 族标准的关系</h4><p>指导思想：管理哲学、理念 <strong>—&gt;</strong> 承上启下：纳领、要点 <strong>—&gt;</strong> 具体要求、活动指南</p><h3 id="质量管理体系的基本术语和定义"><a href="#质量管理体系的基本术语和定义" class="headerlink" title="质量管理体系的基本术语和定义"></a>质量管理体系的基本术语和定义</h3><ul><li>质量 quality（3.1.1）<br>一组固有的特性满足要求的程度</li><li>要求 requirement（3.1.2）<br>明示的，通常隐含的或必需履行的需求和期望</li><li>特性 characteristic（3.5.1）<br>可区分的特征</li></ul><hr><ul><li>产品 product（3.4.2）<br>过程的结果</li><li>过程 process（3.4.1）<br>一组将输入转化为输出的相互关联或相互作用的活动</li><li>程序 procedure（3.4.5）<br>为进行某项活动或过程所规定的途径</li></ul><hr><ul><li>合格 conformity（3.6.1）<br>满足要求</li><li>不合格 nonconformity（3.6.2）<br>未满足要求</li><li><strong>缺陷 defect</strong>（3.6.3）——–（<strong>它往往和安全与产品责任有关系，因此对缺陷一词应慎用</strong>）<br>未满足与预期或规定用途有关的要求</li></ul><hr><ul><li>质量管理 quality management（3.2.8）<br>在质量方面指挥和控制组织的协调的活动</li><li>质量策划 quality planning（3.2.9）<br>质量管理的一部分，致力于制定质量目标并规定必要的运行过程<br>和相关资源以实现质量目标</li><li>质量控制 quality control（3.2.10）<br>质量管理的一部分，致力于满足质量要求</li><li>质量保证 quality assurance（3.2.11）<br>质量管理的一部分，致力于提供质量要求会得到满足的信任</li><li>质量改进 quality improvement（3.2.12）<br>质量管理的一部分，致力于增强满足质量要求的能力</li></ul><hr><ul><li>质量管理体系 quality management system（3.2.3）<br>在质量方面指挥和控制组织的管理体系</li><li>管理体系 management system（3.2.2）<br>建立方针和目标并实现这些目标的体系</li><li>体系 system（3.2.1）<br>相互关联或相互作用的一组要素</li></ul><hr><ul><li>有效性 effectiveness（3.2.14）<br>完成策划的活动和达到策划结果的程度</li><li>效率 efficiency（3.2.15）<br>达到的结果与所使用的资源之间的关系</li></ul><hr><ul><li><p>相关方 interested party（3.3.7）</p><p>与组织的业绩或成就有利益关系的个人或团体</p></li></ul><h2 id="YY-T-0287—2003-标准的理解"><a href="#YY-T-0287—2003-标准的理解" class="headerlink" title="YY/T 0287—2003 标准的理解"></a>YY/T 0287—2003 标准的理解</h2><h3 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h3><p>​        本标准规定了质量管理体系要求，组织可依此要求进行医疗器械的设计和开发、生产、安装和服务以及相关服务的设计、开发和提供</p><p>​        ISO 13485 是规定医疗器械组织质量管理的通用要求，而产品技术标准的特性是针对医疗器械实物的具体要求</p><h3 id="二、引言-范围-规范性引用文件"><a href="#二、引言-范围-规范性引用文件" class="headerlink" title="二、引言 范围 规范性引用文件"></a>二、引言 范围 规范性引用文件</h3><h3 id="三、术语和定义"><a href="#三、术语和定义" class="headerlink" title="三、术语和定义"></a>三、术语和定义</h3><h3 id="四、质量管理体系"><a href="#四、质量管理体系" class="headerlink" title="四、质量管理体系"></a>四、质量管理体系</h3><h3 id="五、管理职责"><a href="#五、管理职责" class="headerlink" title="五、管理职责"></a>五、管理职责</h3><h3 id="六、资源管理"><a href="#六、资源管理" class="headerlink" title="六、资源管理"></a>六、资源管理</h3><h3 id="七、产品实现"><a href="#七、产品实现" class="headerlink" title="七、产品实现"></a>七、产品实现</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">7 产品实现</span><br><span class="line">7.1 产品实现的策划</span><br><span class="line">组织应策划和开发产品实现所需的过程。产品实现的策划应与质量</span><br><span class="line">管理体系其他过程的要求相一致(见4.1)。</span><br><span class="line">在对产品实现进行策划时，组织应确定以下方面的适当内容:</span><br><span class="line">a）产品的质量目标和要求；</span><br><span class="line">b）针对产品确定过程、文件和资源的需求；</span><br><span class="line">c）产品所要求的验证、确认、监视、检验和试验活动，以及产品</span><br><span class="line">接收准则；</span><br><span class="line">d）为实现过程及其产品满足要求提供证据所需的记录（见4.2.4）。</span><br><span class="line">策划的输出形式应适合于组织的运作方式。</span><br><span class="line">组织应在产品实现全过程中, 建立风险管理的形成文件的要求。应</span><br><span class="line">保持风险管理</span><br><span class="line">引起的记录（见4.2.4）。</span><br><span class="line">注1: 对应用于特定的产品、项目或合同的质量管理体系的过程(包括产品实现过程)和资源</span><br><span class="line">作出规定的文件可称之为质量计划。</span><br><span class="line">注 2：组织也可将7.3 的要求应用于产品实现过程的开发。</span><br><span class="line">注 3：见YY 0316 关于风险管理的指南。</span><br></pre></td></tr></table></figure><h3 id="八、测量、分析和改进"><a href="#八、测量、分析和改进" class="headerlink" title="八、测量、分析和改进"></a>八、测量、分析和改进</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 质量管理 </category>
+          
+          <category> ISO13485 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ISO13485 </tag>
+            
+            <tag> 体系 </tag>
+            
+            <tag> 标准 </tag>
+            
+            <tag> ISO9001 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>APQP</title>
+      <link href="/2021/12/22/APQP/"/>
+      <url>/2021/12/22/APQP/</url>
+      
+        <content type="html"><![CDATA[<h2 id="产品质量先期策划-Advanced-Product-Quality"><a href="#产品质量先期策划-Advanced-Product-Quality" class="headerlink" title="产品质量先期策划(Advanced Product Quality"></a>产品质量先期策划(Advanced Product Quality</h2><p>Planning)</p><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 质量管理 </category>
+          
+          <category> APQP </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> APQP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FEMA</title>
+      <link href="/2021/12/20/FEMA/"/>
+      <url>/2021/12/20/FEMA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="潜在失效模式与后果分析-Failure-Mode-and-Effect-Analysis"><a href="#潜在失效模式与后果分析-Failure-Mode-and-Effect-Analysis" class="headerlink" title="潜在失效模式与后果分析(Failure Mode and Effect  Analysis)"></a>潜在失效模式与后果分析(Failure Mode and Effect  Analysis)</h2><h3 id="什么是FEMA？"><a href="#什么是FEMA？" class="headerlink" title="什么是FEMA？"></a>什么是FEMA？</h3><p>FMEA 是先期质量策划中评价潜在失效模式及其起因的一种工具。</p><ul><li>依照其发生在失效的风险优先排列并采取行动排除或降低其发生的。</li><li>为未来使用和持续改进提供文件化的预防经验/方法。</li></ul><h3 id="FEMA分类"><a href="#FEMA分类" class="headerlink" title="FEMA分类"></a>FEMA分类</h3><ul><li><strong>DFMEA</strong>  Design FMEA 设计失效模式及后果分析</li><li><strong>PFMEA</strong>  Process FMEA 过程失效模式及后果分析</li><li><strong>SFMEA</strong>  System FMEA (子)系统失效模式及后果分析</li><li><strong>MFMEA</strong>  Machine FMEA 机器失效模式及后果分析</li><li><strong>AFMEA</strong>  Application FMEA 应用失效模式及后果分析</li><li><strong>PFMEA</strong>  Purchasing FMEA 采购失效模式及后果分析，这个，需要和上面的PFMEA区分好，这里的P是指Purchasing，具体和应用场合有关。</li><li><strong>SFMEA</strong>  Service FMEA 服务失效模式及后果分析</li><li><strong>RFMEA</strong>  Rework FMEA 返工失效模式及后果分析</li></ul><h3 id="FEMA时间顺序"><a href="#FEMA时间顺序" class="headerlink" title="FEMA时间顺序"></a>FEMA时间顺序</h3><p>DFMEA   开始早于过程，完成时间在早期的图样完成但任何工具的制造开始之前</p><p>PFMEA   开始于基本的操作方法讨论完成时，完成时间早于生产计划制定和生产批准之前</p><h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><p><img src="https://s2.loli.net/2021/12/21/jHcWFib1lLwn85T.png" alt="DFEMA流程图"></p><h4 id="严重度（Severity）"><a href="#严重度（Severity）" class="headerlink" title="严重度（Severity）"></a>严重度（<strong>Severity</strong>）</h4><p>衡量失效的影响程度</p><p>失效影响：产品或制程的某一失效对产品外观、结构、功能、性能稳定性、可靠性影响，或对下一制程，使用者和设备的影响</p><p>划分标准：—<strong>主观判定</strong></p><p>其大小由失效模式的影响程度而定，以1至10表示，等级1为轻微，等级10为最严重</p><table><thead><tr><th>等级/评分(Rank)</th><th>划分标准(Criteria)</th></tr></thead><tbody><tr><td>1</td><td>几乎不会有什么影响</td></tr><tr><td>2</td><td>整机内部配件的外观/走线/布局问题；装配性差；很少客户发现/关注的问题</td></tr><tr><td>3</td><td>产品非主要应用的功能之性能稍有瑕疵，如音质、色调等，非专业人士无法识别；EMC Ⅱ级要求（EMC组定义，较高要求）；产品与常规使用/操作的习惯不同</td></tr><tr><td>4</td><td>在高于产品承诺的环境中使用失效，但此环境低于公司内部控制标准或者已达到行业（协会）标准要求；EMCⅠ级要求（EMC组定义，基本要求）；不符合标准化之定义</td></tr><tr><td>5</td><td>存在的问题使产品长期运行的可靠性降低，如散热、纹波；产品维修复杂，甚至需要培训才能完成当前技术无法解决的功能性问题</td></tr><tr><td>6</td><td>产品维护复杂，装配、生产非常困难；设计的产品我司制造工艺无法完成；客户独特配件的兼容性问题；不能95％以上机率复现的问题；计算机监测功能失效或者误差大，如FP指示，BIOS中温度监控显示性能与同类产品相比明显下降；</td></tr><tr><td>7</td><td>外部配件失效，但不影响计算机数据处理功能，如键盘、鼠标失效，显示功能失效，有警告的冗余电源失效；客户关注的重点功能或者产品主推场合应用方面的兼容性问题、量化参数不达标，如网络产品带宽、丢包率</td></tr><tr><td>8</td><td>基本功能失效，失效影响计算机数据处理功能</td></tr><tr><td>9</td><td>影响产品安全运行或者包含不符合法律、法规、产品执行标准；影响人身安全，产品失效时有警告</td></tr><tr><td>10</td><td>影响产品安全运行或者包含不符合法律、法规、产品执行标准，影响人身安全，产品失效时无警告</td></tr></tbody></table><h4 id="发生率（Occurrence）"><a href="#发生率（Occurrence）" class="headerlink" title="发生率（Occurrence）"></a>发生率（<strong>Occurrence</strong>）</h4><p>某一原因而导致失效发生的几率</p><p>划分标准：一部良品出现的几率来定，以1至10表示，等级1为很低，等级10 为很高</p><p>划分标准—<strong><a href="https://www.sohu.com/a/157910551_702317">CPK</a>、主观判定、统计资料</strong></p><p><img src="https://s2.loli.net/2021/12/21/gmXOkn4JE9UN1dI.png" alt="发生率"></p><h4 id="难检度（Detection）"><a href="#难检度（Detection）" class="headerlink" title="难检度（Detection）"></a>难检度（<strong>Detection</strong>）</h4><p>在现行的控制措施下，侦测失效发生的能力</p><p>划分标准：依失效模式检验的难易程度来定，以1至10表示，等级1为容易，等级10为几乎不可能发现 </p><p>划分标准—<strong>主观判</strong>定、统计资料</p><p><img src="https://s2.loli.net/2021/12/21/uUFacd16IfmVjR8.png" alt="难检度"></p><h4 id="风险系数（Risk-Priority-Number）"><a href="#风险系数（Risk-Priority-Number）" class="headerlink" title="风险系数（Risk Priority Number）"></a>风险系数（<strong>Risk Priority Number</strong>）</h4><p>$$<br>RPN=S<em>O</em>D<br>$$</p><ol><li>风险系数RPN排出次序后，RPN越大越优先解决。  RPN在100以上者必须解决；50&lt;RPN&lt;100应尽可能解决，不能解决必须加严控制；RPN&lt;50可不加控制。</li><li>当严重度(S)很高或发生率（O）很高时，不管RPN大小如何，必须制定相应改善或控制措施 ，并指定责任人和改善完成日期。</li></ol><h3 id="FMEA表单说明"><a href="#FMEA表单说明" class="headerlink" title="FMEA表单说明"></a>FMEA表单说明</h3><p><img src="https://s2.loli.net/2021/12/21/HufCwMdZIh2eEgq.png" alt="FEMA表单"></p><ol><li>FMEA编号：填入FMEA文件的编号，以便查询; </li><li>项目：填入所分析的系统、子系统或零件的过程名称、编号; </li><li>设计责任：部门、小组还应包括供方的名称; </li><li>填入负责准备FMEA工作的工程师姓名、电话及所在公司名称; </li><li>机型/料号：填入将使用和正被分析的设计过程影响的预期的机型和料号;</li><li>关键日期：填入FMEA初次预定完成日期、该日期不应超过计划开始设计生产发布日期;</li><li>FMEA日期：填入编制FMEA原始稿的日期及最新修订的日期；</li><li>核心小组：列出有权确定和执行任务的责任部门和个人姓名; 如果对某一特定原因无建议措施,那么就在该栏中写“N/A” ；</li><li>项目/功能：填入被分析项目的名称和编号; 若该项目有多种功能,且有不同的失效模式,应把所有功能都单独列出;</li><li>潜在失效模式: 对一个特定项目及其功能,应用规范化、专业性的术语来列出每一个潜在失效模式。前提是这种失效可能发生,但不一定发生。比如：裂纹、变形、松动、短路（电器）、氧化、断裂等无功能、部分功能、功能过强、功能降级、功能间歇、非预期功能。</li><li>潜在失效后果:  潜在失效后果,就是失效模式对系统功能的影响;一般是客户在使用时看到的状况。比如：噪声、工作不正常、外观不良、粗糙、不稳定、间歇性工作、不起作用、异味等。 </li><li>严重度(S) </li><li>分级(重要程度) ：用于对另件、子系统或系统的产品特性分级:关键、主要、重要、轻微等;</li><li>潜在失效的起因/机理：潜在失效起因是指一个设计/工艺薄弱部分的迹象,起因是什么导致失效</li><li>频度(0):频度是指某一特定失效起因或机理(已列于前栏中)出现的可能性. </li><li>现行设计/工艺控制。 控制方法指的是那些已经用于或正在用于相同或相似设计中的那些方法（比如设计评审、计算研究、可行性评审、样机试验和老化试验等）。</li><li>探测度(D) </li><li>风险顺序数RPN </li><li>建议措施:（详见后面RPN的评估）<br>比如设计更改、过程更改、特殊控制、采用新程序或指南的更改。如果对某一特定原因无建议措施,那么就在该栏中写“无”。</li><li>责任(对建议措施) ：   把负责建议措施执行的组织和个人及预计完成的日期填写在本栏中; </li><li>采取的措施：   跟踪、评审、确认和控制计划等，记录一下具体的措施和生效日期</li><li>纠正后RPN </li><li>跟踪：小组成员应保证所有建议措施被实施或已妥善  地落实; 24.RPN的再改进,一般行业要求RPN=&lt;50.</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 质量管理 </category>
+          
+          <category> FEMA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PFEMA </tag>
+            
+            <tag> DFEMA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>浅谈医疗器械GMP</title>
+      <link href="/2021/12/20/%E6%B5%85%E8%B0%88%E5%8C%BB%E7%96%97%E5%99%A8%E6%A2%B0GMP/"/>
+      <url>/2021/12/20/%E6%B5%85%E8%B0%88%E5%8C%BB%E7%96%97%E5%99%A8%E6%A2%B0GMP/</url>
+      
+        <content type="html"><![CDATA[<h2 id="浅谈医疗器械GMP"><a href="#浅谈医疗器械GMP" class="headerlink" title="浅谈医疗器械GMP"></a>浅谈医疗器械GMP</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>​    本次发言，是收集了医疗器械行业中实施YY0287 idt ISO13485和医疗器械GMP试点的一些情况，从宏观上谈谈有关学习、贯彻《<a href="https://www.nmpa.gov.cn/xxgk/fgwj/bmgzh/20140730190001932.html">医疗器械生产质量管理规范</a>(GMP)》的问题</p><h3 id="关于GMP"><a href="#关于GMP" class="headerlink" title="关于GMP"></a>关于GMP</h3><p>​    GMP是英文名Good Manufacturing Practices for Drugs的缩写。GMP可以直译为“优良的生产实践”；当然这里我们主要指的是药品(包括医疗器械)的生产。食品、化妆品等也应参照GMP进行生产，由于“GMP’’已像“TV’’等外来词缩写习惯应用．除官方文件外，大家已约定俗成，成为国际间通用词汇。<br>​     在国际上，GMP已成为药品生产和质量管理的基本准则，是一套系统的、科学的管理制度。实施GMP，不仅仅通过最终产品的检验来证明达到质量要求，而是在药品生产的全过程中实施科学的全面管理和严密的监控来获得预期质量。实施GMP可以防止生产过程中药品的污染、混药和错药。GMP是药品生产的一种全面质量管理制度.</p><h3 id="GMP分类"><a href="#GMP分类" class="headerlink" title="GMP分类"></a>GMP分类</h3><ol><li><p>从GMP适用范围来看，现行的GMP可分为三类：</p><ul><li><p>①具有国际性质的GMP。如WHO的GMP，北欧七国自由贸易联盟制定的PIC-GMP（PIC为Pharmaceutical lnspection Convention即药品生产检查互相承认公约),东南亚国家联盟的GMP等。</p></li><li><p>②国家权力机构颁布的GMP。如中华人民共和国卫生部及后来的国家药品监督管理局、美国FDA、英国卫生和社会保险部、日本厚生省等政府机关制订的GMP。</p></li><li><p>③工业组织制订的GMP。如美国制药工业联合会制订的，标准不低于美国政府制定的GMP，中国医药工业公司制订的GMP实施指南，甚至还包括药厂或公司自己制订的。</p></li></ul></li><li><p>从GMP制度的性质来看，又可分为两类：</p><ul><li><p> ①将GMP作为法典规定。  如美国、日本、中国的GMP。</p></li><li><p> ②将GMP作为建议性的规定，有些GMP起到对药品生产和质量管理的指导作用； 如联合国WHO(国际卫生组识)的GMP。</p></li></ul></li><li><p> WHO的“国际贸易药品质量签证体制”中已规定出口药品厂家必须按照GMP的规定进行生产，并接受进口国药品监督管理部门按GMP规定进行的监督.这样,按照GMP要求生产药品已成为药品进入国际市场的先决条件，GMP也就成为国际性的药品质量控制和检查的依据。</p></li><li><p>  总的来说，各国按GMP要求进行药品生产管理和质量管理已是大势所趋；各国的GMP内容基本上是一致的，但也各有特点。对特殊品种，如大输液也可单独制订大输液的GMP(LVP—GMP，Large Volume Parenteral-GMP)。实践证明，GMP是行之有效的科学化、系统化的管理制度，对保证药品质量起到积极作用,已经得到国际上的普遍承认。</p></li><li><p>  为了确保医疗器械质量，适应我国改革开放形势的需要，在医疗器械领域建立完整的质量保证系统,推行GMP制度已是当前迫在眉前的任务。</p></li></ol><h3 id="GMP修订"><a href="#GMP修订" class="headerlink" title="GMP修订"></a>GMP修订</h3><ul><li>2004年3月正式启动规范的编写</li><li>2006年5月，《医疗器械生产质量管理规范》总则上网征求意见。</li><li>2006年7月，对《医疗器械质量管理规范无菌医疗器械实施指南》与《医疗器械质量管理规范植入性医疗器械实施指南》下发各省并上网公开征求意见。</li><li>2006年8月，试用文本定稿。</li><li>2006年12月，对无菌和植入性医疗器械生产企业质量管理体系规范试点工作正式启动。涉及血袋、输液器、输注泵、血浆分离器、骨科植入材料、心脏起搏器、产包、导管、宫内节育器、羟基磷灰石植入材料10个品种，确定上海、浙江、广东、陕西省（市）作为无菌医疗器械企业试点地区，北京、江苏、四川、天津省（市）作为植入性医疗器械企业试点地区。</li><li>2008年1月，试点工作总结。</li><li>2008年05月30日，再次上网征求《医疗器械生产质量管理规范》等8个修改稿意见。</li><li>国家将对医疗器械生产企业实施GMP检查，已没有悬念。</li></ul><h3 id="GMP的实质认识"><a href="#GMP的实质认识" class="headerlink" title="GMP的实质认识"></a>GMP的实质认识</h3><ul><li><p>《医疗器械生产质量管理规范》是政府对医疗器械生产企业质量管理体系进行监管的准则。</p><p>从规范的适用范围看：</p><ul><li><p>医疗器械生产企业申领、换发《医疗器械生产许可证》，以及企业生产范围、生产地址变更时，企业可以自愿申请医疗器械生产质量管理规范的检查。</p></li><li><p>医疗器械产品注册前进行医疗器械生产质量管理规范的检查，合格后方可注册。</p><p>在注册进行体系考核时，按照《规范》可对各类医疗器械实施全过程质量体系监督管理。</p></li><li><p>医疗器械生产企业的监督检查（包括监督抽查、飞行检查）、生产企业日常监督检查，也将按照《规范》要求进行。</p></li></ul></li><li><p>  GMP是企业进行质量管理体系建设的规范</p></li><li><p>GMP指明了质量管理体系建设的技术要求和法规要求。</p></li><li><p> 政府管理部门将按GMP文件对企业的质量管理体系进行检查。</p></li><li><p>  是促使中国医疗器械生产企业及其产品走向世界的助推剂。</p></li><li><p>中国的GMP与国际上的体系要求是相通的。</p></li></ul><p>GMP的实施使中国的企业的质量管理体系更加规范、产品质量更有保证。   医疗器械企业有的经历了“全面质量    管理”、“ISO9000/13485”、“无菌医疗器械生产质量管理实施细则” 和“医疗器械GMP”(试点)。</p><ul><li>实施“全面质量管理”是企业初级阶段寻求一种企业质量管理的方法，这是试验性的；</li><li>实施“ISO9000/13485”，是企业引入现代化管理技术，进一步提高和完善质量管理技术与国际接轨，这是意愿性的；</li><li>实施“医疗器械GMP”使企业的生产质量管理符合法规要求，确保制造的医疗器械产品安全有效，这是强制性的。</li></ul><p> “全面质量管理”、“ISO13485”、“无菌医疗器械生产质量管理实施细则”、“医疗器械GMP”。不只是对企业质量管理的一种要求，应该视为是一种理念，是一种方法，是企业必须遵循的组合标准。</p><ul><li>  但是，“ISO13485” 是一个通用标准，要求比较模糊，是宏观性的。</li><li>《医疗器械GMP 》紧扣“ISO13485”，</li><li>《医疗器械GMP 》的下层次《实施细则》针对相应的产品提出具体要求，使企业质量管理体系要求更趋清晰，更具操作性。</li><li> 所以《医疗器械GMP》给企业提供了一种优良的医疗器械企业管理方法。</li></ul><h3 id="企业应如何应对GMP检查"><a href="#企业应如何应对GMP检查" class="headerlink" title="企业应如何应对GMP检查"></a>企业应如何应对GMP检查</h3><p>coming soon……</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 质量管理 </category>
+          
+          <category> GMP </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> GMP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>git pull error</title>
       <link href="/2021/12/13/git-pull-error/"/>
       <url>/2021/12/13/git-pull-error/</url>
